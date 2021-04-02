@@ -1,0 +1,51 @@
+﻿@model ProjektHB.Models.AdminLogin
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width" />
+    <link href="~/css/cssmall.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Bungee+Shade&family=Faster+One&family=Frijole&family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
+    <title>Logga in</title>
+    <style>
+        table {
+            position: center;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 225px;
+        }
+
+        h1 {
+            font-family: 'Amatic SC', cursive;
+            font-size: 50px;
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 53px;
+            color: #FFAD32;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inloggning för admin</h1>
+    @*Ett sätt att skapa en form*@
+    @using (Html.BeginForm())
+    {
+        <table>
+            <tr><th class="Btext">Användarnamn</th></tr>
+            <tr><th class="Binput">@Html.EditorFor(info => info.användarnamn)</th></tr>@*EditorFor visar en tom ruta för inmatning*@
+            <tr><th class="Btext">Lösenord</th></tr>
+            <tr><th class="Binput">@Html.PasswordFor(info => info.lösenord)</th></tr>
+            <tr><th class="Blogin"><input type="submit" value="Logga in" /></th></tr>
+        </table>
+        @ViewBag.ErrorMessage
+    }
+</body>
+</html>

@@ -1,0 +1,40 @@
+﻿@model List<ProjektHB.Models.Burger>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width" />
+    <link href="~/css/cssmall.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Bungee+Shade&family=Faster+One&family=Frijole&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+            font-family: 'Amatic SC', cursive;
+            font-size: 54px;
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            color: #FFAD32;
+            position: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meny</h1>
+        <table>
+        @foreach (var burger in Model)
+        { 
+            <tr><th class="Bnamn" >@Html.DisplayFor(m => burger.namn)</th></tr>//DisplayFor visar lagrad data från objekt/lista i databas
+            <tr><th class="Bing" >@Html.DisplayFor(m => burger.merinfo)</th></tr>
+            <tr><th class="Bpris" >@Html.DisplayFor(m => burger.pris)kr</th></tr>
+                    }
+        </table>
+</body>
+</html>

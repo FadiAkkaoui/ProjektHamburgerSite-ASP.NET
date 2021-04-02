@@ -1,0 +1,197 @@
+﻿/*CSS klasser och id:n för Home*/
+.image {
+    width: 100%;
+    height: 580px;
+    object-fit: cover;
+    border-radius: 3px;
+    display: block;
+    outline: none;
+    box-shadow: 3px -5px -5px 6px;
+}
+div.out {
+    width: auto;
+    height: auto;
+    margin: 25px 96px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    background-color: #EEEEEE;
+    box-shadow: 3px 4px 7px 1px;
+    border-radius: 3px;
+}
+div.in {
+    width: auto;
+    height: auto;
+    background-color: #EEEEEE;
+    margin: 5px auto;
+    border-radius: 25px;
+}
+.ec-circle {
+    width: 420px;
+    height: 420px;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top: 90px;
+    -webkit-border-radius: 210px;
+    -moz-border-radius: 210px;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Kelly Slab', Georgia, serif;
+    background: #dda994 url(~/Bilder/karta6.jpg) no-repeat center center;
+    box-shadow: 3px 4px 7px 1px;
+    transition: box-shadow 400ms ease-in-out;
+    display: block;
+    outline: none;
+}
+p {
+    line-height: 1.5em;
+    margin: 4px;
+    padding: 25px;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    color: #FFAD32;
+    text-shadow: 1px 1px #212121;
+}
+/*CSS klasser och id:n för User*/
+.Bnamn {
+    color: #FFAD32;
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    font-size: 40px
+}
+
+.Bing {
+    color: #FFAD32;
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    font-weight: bold;
+    color: #EEEEEE;
+    font-size: 22px
+}
+
+.Bpris {
+    color: #FFAD32;
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    font-weight: bold;
+    color: #EEEEEE;
+    font-size: 15px
+}
+.Balt {
+    color: #FFAD32;
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    font-size: 40px
+}
+
+.Binfo {
+    color: #FFAD32;
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    font-weight: bold;
+    color: #EEEEEE;
+    font-size: 22px
+}
+.Bdag {
+    color: #FFAD32;
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    font-size: 40px
+}
+
+.Btid {
+    color: #FFAD32;
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    font-weight: bold;
+    color: #EEEEEE;
+    font-size: 22px
+}
+
+.Btids {
+    color: #c23616;
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px
+}
+table {
+    position: center;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 175px;
+}
+/*CSS klasser och id:n för Login*/
+.Binput {
+    color: #FFAD32;
+    font-family: 'Noto Sans SC', sans-serif;
+    text-align: center;
+    font-size: 28px;
+}
+
+.Btext {
+    color: #FFAD32;
+    font-family: 'Fredericka the Great', cursive;
+    text-align: left;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.Blogin {
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    font-weight: bold;
+    color: #EEEEEE;
+    font-size: 25px;
+}
+/*CSS klasser och id:n för Burger*/
+.Binput {
+    color: #FFAD32;
+    font-family: 'Noto Sans SC', sans-serif;
+    text-align: center;
+    font-size: 28px;
+}
+
+.Btext {
+    color: #FFAD32;
+    font-family: 'Fredericka the Great', cursive;
+    text-align: left;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.Btexti {
+    color: #FFAD32;
+    font-family: 'Fredericka the Great', cursive;
+    text-align: left;
+    font-size: 30px;
+}
+
+.Bupgrade {
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    font-weight: bold;
+    color: #EEEEEE;
+    font-size: 25px;
+}
+.Bdelete {
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    font-weight: bold;
+    color: #EEEEEE;
+    font-size: 25px;
+}
+.Blaggtill {
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    font-weight: bold;
+    color: #EEEEEE;
+    font-size: 25px;
+}
+.BinfoD {
+    color: #e84118;
+    font-family: 'Noto Sans SC', sans-serif;
+    text-align: left;
+    font-size: 28px;
+}

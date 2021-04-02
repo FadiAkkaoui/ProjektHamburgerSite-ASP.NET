@@ -1,0 +1,54 @@
+﻿@model ProjektHB.Models.Burger
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width" />
+    <link href="~/css/cssmall.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Bungee+Shade&family=Faster+One&family=Frijole&family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <title>Logga in</title>
+    <style>
+        table {
+            position: center;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 193px;
+        }
+
+        h1 {
+            font-family: 'Amatic SC', cursive;
+            font-size: 50px;
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 53px;
+            color: #FFAD32;
+        }
+    </style>
+</head>
+<body>
+    <h1>Radera burgare</h1>
+    @*Ett sätt att skapa form*@
+    @using (Html.BeginForm())
+    {
+<table>
+    <tr><th class="Btext">Namn:</th></tr>
+    <tr><th class="BinfoD">@Html.DisplayFor(burger => burger.namn)</th></tr>
+    @*Hämtar lagrad data i listan*@
+    <tr><th class="Btexti">Ingredienser:</th></tr>
+    <tr><th class="BinfoD">@Html.DisplayFor(burger => burger.merinfo)</th></tr>
+    <tr><th class="Btext">Pris:</th></tr>
+    <tr><th class="BinfoD">@Html.DisplayFor(burger => burger.pris)</th></tr>
+    <tr><th class="Bdelete"><input type="submit" value="Radera" /></th></tr>
+</table>
+}
+</body>
+</html>

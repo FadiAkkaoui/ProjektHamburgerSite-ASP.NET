@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Burger&Burgers</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Background.css">
+</head>
+<body style='background-color: #352F2F'>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand" style="color: #FFAD32;font-family: 'Amatic SC', cursive;font-size: 30px;" asp-area="" asp-controller="Home" asp-action="Index">Burger&Burgers</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <span class="sr-only">(current)</span></a>
+                <a style="color: #FFAD32;font-family: 'Amatic SC', cursive;font-size: 30px;" class="nav-link" asp-area="" asp-controller="User" asp-action="Index" >Meny</a>
+                <a style="color: #FFAD32;font-family: 'Amatic SC', cursive;font-size: 30px;" class="nav-link" asp-area="" asp-controller="User" asp-action="Oppettider">Öppettider</a>
+                <a style="color: #FFAD32;font-family: 'Amatic SC', cursive;font-size: 30px;" class="nav-link" asp-area="" asp-controller="User" asp-action="KontaktaOss">Kontakta oss</a>
+                <a class="nav-link" style="color: #FFAD32;font-family: 'Amatic SC', cursive;font-size: 30px;" asp-area="" asp-controller="Login" asp-action="Index">Admin</a>
+            </div>
+        </div>
+    </nav>
+<div class="container">
+   <main role="main" class="pb-3">
+       @RenderBody()
+   </main>
+</div>
+<footer style="background: #303841;color: #fff;text-align: center;position: absolute;width: 100%;">
+    <div class="container">
+        &copy; 2020 - Burgers&Burgers - Fadi Akkaoui
+    </div>
+</footer>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@RenderSection("Scripts", required: false)
+</body>
+</html>

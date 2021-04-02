@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Views\" />
+    <Folder Include="Views\Home\" />
+    <Folder Include="wwwroot\css\" />
+    <Folder Include="Views\Burger\" />
+    <Folder Include="Views\User\" />
+    <Folder Include="Views\Login\" />
+    <Folder Include="Views\Shared\" />
+    <Folder Include="wwwroot\Bilder1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.8" />
+    <PackageReference Include="jQuery" Version="3.5.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\Bilder1\bild4.jpg" />
+    <Content Remove="wwwroot\Bilder1\bilden1.jpg" />
+    <Content Remove="wwwroot\Bilder1\bilden10.jpg" />
+    <Content Remove="wwwroot\Bilder1\bilden2.jpg" />
+    <Content Remove="wwwroot\Bilder1\bilden3.jpg" />
+    <Content Remove="wwwroot\Bilder1\bilden5.jpg" />
+    <Content Remove="wwwroot\Bilder1\bilden6.jpg" />
+    <Content Remove="wwwroot\Bilder1\bilden7.jpg" />
+    <Content Remove="wwwroot\Bilder1\bilden8.jpg" />
+    <Content Remove="wwwroot\Bilder1\bilden9.jpg" />
+    <Content Remove="wwwroot\Bilder1\kartafärg.jpg" />
+    <Content Remove="wwwroot\Bilder1\kartan.jpg" />
+    <Content Remove="wwwroot\Bilder1\kartan6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\Bilder1\bild4.jpg" />
+    <None Include="wwwroot\Bilder1\bilden1.jpg" />
+    <None Include="wwwroot\Bilder1\bilden10.jpg" />
+    <None Include="wwwroot\Bilder1\bilden2.jpg" />
+    <None Include="wwwroot\Bilder1\bilden3.jpg" />
+    <None Include="wwwroot\Bilder1\bilden5.jpg" />
+    <None Include="wwwroot\Bilder1\bilden6.jpg" />
+    <None Include="wwwroot\Bilder1\bilden7.jpg" />
+    <None Include="wwwroot\Bilder1\bilden8.jpg" />
+    <None Include="wwwroot\Bilder1\bilden9.jpg" />
+    <None Include="wwwroot\Bilder1\kartafärg.jpg" />
+    <None Include="wwwroot\Bilder1\kartan.jpg" />
+    <None Include="wwwroot\Bilder1\kartan6.jpg" />
+  </ItemGroup>
+</Project>
